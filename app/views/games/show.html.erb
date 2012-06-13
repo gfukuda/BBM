@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @game.date.strftime('%Y/%m/%d %H:%M:%S') %>
+</p>
+<p>
+  <b>Championship:</b>
+  <%= @game.championship.name %>
+</p>
+<p>
+  <b>Home Team:</b>
+  <%= @game.home_team.name %>
+</p>
+<p>
+  <b>Away Team:</b>
+  <%= @game.away_team.name %>
+</p>
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>
